@@ -4,7 +4,7 @@ layout: page
 
 # About Me
 
-Here is **Yong Dai (代勇)**.<br>
+Here is **Yong Dai**.<br>
 
 ---
 
