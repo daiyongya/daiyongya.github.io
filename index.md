@@ -26,14 +26,8 @@ Recently, my focus has shifted to what I see as the next frontier: **multi-modal
 
 <img src="images/interest.png" alt="Research Interests" width="601"/>
 
-## Project
-
-- 
-- 
-- 
-
 ---
-
+## News
 | Year | Content |
 |------|---------|
 | <img src="images/news.png" width="20" style="vertical-align:middle; margin-right:6px;"/> **Feb 2025** | 🎉 Two papers accepted to <span style="color:red">ACM MM 2025</span> |
