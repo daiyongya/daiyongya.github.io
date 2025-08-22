@@ -24,7 +24,7 @@ Recently, my focus has shifted to what I see as the next frontier: **multi-modal
 
 ## Research Interests
 
-<img src="images/interest.jpg" alt="Research Interests" width="601"/>
+<img src="images/interest.pdf" alt="Research Interests" width="601"/>
 
 ## Project
 
