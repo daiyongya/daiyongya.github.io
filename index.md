@@ -1,46 +1,74 @@
 ---
 layout: page
+page_class: page-home
+hide_author: true
 ---
 
-# About Me
+<header class="profile-intro">
+  <p class="eyebrow">Artificial Intelligence Researcher</p>
+  <h1>Yong Dai</h1>
+  <p class="profile-focus">Language models, multimodal intelligence, autonomous agents, and embodied intelligence.</p>
+  <nav class="profile-links" aria-label="Profile links">
+    <a href="mailto:{{ site.owner.email }}">Email</a>
+    <a href="{{ site.owner.scholar }}">Google Scholar</a>
+    <a href="{{ '/publications/' | relative_url }}">Publications</a>
+  </nav>
+  <div class="research-signals" aria-label="Primary research areas">
+    <p><span>R01</span>Foundation Models</p>
+    <p><span>R02</span>Multimodal Intelligence</p>
+    <p><span>R03</span>Agentic Reasoning</p>
+    <p><span>R04</span>Embodied Intelligence</p>
+  </div>
+</header>
 
-Here is **Yong Dai**.<br>
+<section class="home-section bio-section" aria-labelledby="about-heading">
+  <div class="section-heading">
+    <p class="section-index">01</p>
+    <h2 id="about-heading">About</h2>
+  </div>
+  <div class="section-body">
+    <p>My research bridges large language models and the complex, multimodal world we live in. I completed my Ph.D. at the University of Electronic Science and Technology of China under the guidance of Professor Zenglin Xu, with research experience at Microsoft and Tencent AI Lab.</p>
+    <p>I now focus on <strong>multimodality</strong>, <strong>web agents</strong>, and <strong>embodied intelligence</strong>. I am interested in unified models that can perceive, reason, act, and learn through interaction, with the long-term goal of connecting world models and autonomous agents into capable general-purpose intelligent systems.</p>
+  </div>
+</section>
 
----
+<section class="home-section" aria-labelledby="experience-heading">
+  <div class="section-heading">
+    <p class="section-index">02</p>
+    <h2 id="experience-heading">Experience</h2>
+  </div>
+  <div class="section-body timeline">
+    <div class="timeline-item"><p class="timeline-date">2021 - 2024</p><p><strong>Research Intern and Researcher</strong><br>Tencent AI Lab</p></div>
+    <div class="timeline-item"><p class="timeline-date">2020 - 2021</p><p><strong>Visiting Student</strong><br>Westlake University</p></div>
+    <div class="timeline-item"><p class="timeline-date">2019 - 2020</p><p><strong>Research Intern</strong><br>Microsoft STCA NLP Group</p></div>
+    <div class="timeline-item"><p class="timeline-date">2018 - 2019</p><p><strong>Project Lead</strong><br>Research collaboration with Nuance</p></div>
+  </div>
+</section>
 
-## Brief Bio
-As a dedicated AI researcher, my work bridges the gap between large language models and the complex, multi-modal world we live in. My journey began at the University of Electronic Science and Technology of China (UESTC), where I completed my Ph.D. under the guidance of Professor Zenglin Xu. During my doctoral program, I also had the valuable opportunity to learn and grow as a research intern at Microsoft. This experience, combined with my subsequent role as a researcher at Tencent AI Lab, solidified my expertise in harnessing large-scale models for a wide spectrum of downstream tasks.
+<section class="home-section" aria-labelledby="research-heading">
+  <div class="section-heading">
+    <p class="section-index">03</p>
+    <h2 id="research-heading">Research</h2>
+  </div>
+  <div class="section-body">
+    <figure class="research-map">
+      <a href="images/interest.pdf" aria-label="Open the research interests map as a PDF"><img src="images/interest.png" alt="Research roadmap from language models to embodied intelligence and world models"></a>
+      <figcaption>A research trajectory from language understanding to multimodal agents, embodied intelligence, and world models.</figcaption>
+    </figure>
+  </div>
+</section>
 
-Recently, my focus has shifted to what I see as the next frontier: **multi-modality** and **web agents**. I am deeply fascinated by the pursuit of a unified paradigm—a single, elegant model that can perceive, reason, and create across text, images, and other data formats. My long-term vision is to contribute to the development of a true "World Model." By integrating such a powerful generative and understanding system with autonomous agent technology, I aim to play a part in building the foundation for **Artificial General Intelligence (AGI)** and creating systems that can truly benefit humanity.
-
----
-
-## Experience
-
-- 06/21 - 04/24: Research Intern and Researcher, Tencent AI Lab
-- 12/20 - 04/21: Visiting student, Westlake University
-- 10/19 - 10/20: Research Intern, Microsoft STCA nlpg
-- 10/18 - 08/19: Project leader, cooperation project with Nuance
-
-## Research Interests
-
-<img src="images/interest.png" alt="Research Interests" width="601"/>
-
-## News
-
----
-| Year | Content |
-|------|---------|
-| <img src="images/news.png" width="20" style="vertical-align:middle; margin-right:6px;"/> **Feb 2025** | 🎉 Two papers accepted to <span style="color:red">ACM MM 2025</span> |
-| <img src="images/news.png" width="20" style="vertical-align:middle; margin-right:6px;"/> **Sep 2024** | 🎉 Two papers accepted to <span style="color:red">NeurIPS 2024</span> |
-| <img src="images/news.png" width="20" style="vertical-align:middle; margin-right:6px;"/> **Sep 2024** | 🎉 One paper accepted to <span style="color:red">EMNLP 2024 Findings</span> |
-| <img src="images/news.png" width="20" style="vertical-align:middle; margin-right:6px;"/> **Jun 2024** | 🎉 Three papers accepted to <span style="color:red">ACL 2024</span> |
-| <img src="images/news.png" width="20" style="vertical-align:middle; margin-right:6px;"/> **Jun 2023** | 🎉 Paper *SkillNet-X* accepted to <span style="color:red">ICASSP 2024</span> |
-| <img src="images/news.png" width="20" style="vertical-align:middle; margin-right:6px;"/> **Dec 2022** | 🎉 Paper *Federated Learning + PLMs* accepted to <span style="color:red">Findings of ACL 2023</span> |
-| <img src="images/news.png" width="20" style="vertical-align:middle; margin-right:6px;"/> **Oct 2022** | 🎉 Paper *Prompt-based Constrained Clustering* accepted to <span style="color:red">Findings of EMNLP 2022</span> |
-| <img src="images/news.png" width="20" style="vertical-align:middle; margin-right:6px;"/> **Mar 2022** | 🎉 Paper *Whole Word Masking* accepted to <span style="color:red">Findings of ACL 2022</span> |
-| <img src="images/news.png" width="20" style="vertical-align:middle; margin-right:6px;"/> **Mar 2022** | 🎉 Paper *Chinese GPT for Pinyin Input* accepted to <span style="color:red">ACL 2022</span> |
-| <img src="images/news.png" width="20" style="vertical-align:middle; margin-right:6px;"/> **Jan 2022** | 🎉 Paper *Graph Fusion Network* accepted to <span style="color:red">KBS</span> |
-| <img src="images/news.png" width="20" style="vertical-align:middle; margin-right:6px;"/> **Sep 2021** | 🎉 Paper *Unsupervised Sentiment Analysis* accepted to <span style="color:red">CC</span> |
-| <img src="images/news.png" width="20" style="vertical-align:middle; margin-right:6px;"/> **Oct 2020** | 🎉 Paper *Contextualize KBs with Transformer* accepted to <span style="color:red">EMNLP 2021 (Oral)</span> |
-| <img src="images/news.png" width="20" style="vertical-align:middle; margin-right:6px;"/> **Apr 2020** | 🎉 Paper *Adversarial Training for Sentiment Analysis* accepted to <span style="color:red">AAAI 2020</span> |
+<section class="home-section" aria-labelledby="news-heading">
+  <div class="section-heading">
+    <p class="section-index">04</p>
+    <h2 id="news-heading">News</h2>
+  </div>
+  <div class="section-body news-list">
+    <div class="news-item"><time datetime="2026">2026</time><p><em>Optimizing Agentic Reasoning with Retrieval via Synthetic Semantic Information Gain Reward</em> accepted by <strong>ICML 2026</strong>.</p></div>
+    <div class="news-item"><time datetime="2026">2026</time><p><em>Web-CogReasoner</em>, a multimodal cognitive reasoning framework for web agents, accepted by <strong>ICLR 2026</strong>.</p></div>
+    <div class="news-item"><time datetime="2026">2026</time><p><em>E-ViC</em>, which studies embodied visual chains for spatial intelligence, accepted by <strong>ACL 2026</strong>.</p></div>
+    <div class="news-item"><time datetime="2026">2026</time><p><em>Bridging VLMs and Embodied Intelligence with Deliberate Practice Policy Optimization</em> accepted by <strong>ACM MM 2026</strong>.</p></div>
+    <div class="news-item"><time datetime="2025">2025</time><p><em>Distribution-Aligned Decoding</em> and <em>InfMasking</em> accepted by <strong>NeurIPS 2025</strong>.</p></div>
+    <div class="news-item"><time datetime="2025">2025</time><p><em>Nexus</em> and <em>MME-Finance</em> accepted by <strong>ACM MM 2025</strong>.</p></div>
+  </div>
+</section>

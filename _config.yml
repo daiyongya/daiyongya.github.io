@@ -3,7 +3,7 @@
 # --------------------------------------------------
 title: Yong Dai   # Main site title (appears in browser tab & RSS)
 # tagline is personal website of Hanlin Cai. Powered by Jekyll, based on the Minimal Mistakes theme.  # Optional short tagline, used by some layouts
-description: Software Engineer @ Hithink RoyalFlush Information Network Co., Ltd # Strongly recommended for SEO & social cards
+description: AI researcher working on language models, multimodal agents, and embodied intelligence
 
 # TIP ── For local development you can comment out `url`
 # and build with relative paths. In production you want this set.
@@ -16,7 +16,7 @@ owner:
   name: Yong Dai
   avatar: hanlin.jpg
   email: daiyongya@outlook.com
-  scholar: https://scholar.google.com.hk/citations?view_op=list_works&hl=th&hl=th&user=mCCOT7wAAAAJ&sortby=pubdate
+  scholar: https://scholar.google.com/citations?hl=zh-CN&user=mCCOT7wAAAAJ
 
 
 # --------------------------------------------------

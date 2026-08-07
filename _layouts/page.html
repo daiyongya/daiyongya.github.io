@@ -25,7 +25,7 @@
 </head>
 
 
-<body class="page" itemscope itemtype="http://schema.org/WebPage">
+<body class="page{% if page.page_class %} {{ page.page_class }}{% endif %}" itemscope itemtype="http://schema.org/WebPage">
 
 {% include chrome-frame.html %}
 
@@ -36,9 +36,11 @@
 </div><!-- /.image-wrap -->{% endif %}
 
 <div id="main" role="main"  itemprop="mainContentOfPage">
-  <div class="article-author-top">
-    {% include author-bio.html %}
-  </div>
+  {% unless page.hide_author %}
+    <div class="article-author-top">
+      {% include author-bio.html %}
+    </div>
+  {% endunless %}
   <article itemscope itemtype="http://schema.org/CreativeWork">
   {% comment %}
     <div class="headline-wrap">
