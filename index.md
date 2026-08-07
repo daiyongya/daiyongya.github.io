@@ -52,8 +52,8 @@ hide_author: true
   </div>
   <div class="section-body">
     <figure class="research-map">
-      <a href="images/interest.pdf" aria-label="Open the research interests map as a PDF"><img src="images/interest.png" alt="Research roadmap from language models to embodied intelligence and world models"></a>
-      <figcaption>A research trajectory from language understanding to multimodal agents, embodied intelligence, and world models.</figcaption>
+      <a href="images/research-roadmap.svg" aria-label="Open the research system diagram"><img src="images/research-roadmap.svg" alt="Four connected research areas converging toward interactive world models"></a>
+      <figcaption>Four connected research directions converge toward interactive world models.</figcaption>
     </figure>
   </div>
 </section>
