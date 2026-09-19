@@ -25,7 +25,7 @@
 </head>
 
 
-<body class="page{% if page.page_class %} {{ page.page_class }}{% endif %}" itemscope itemtype="http://schema.org/WebPage">
+<body class="page{% if page.url == '/' %} page-home{% elsif page.url == '/publications/' %} page-publications{% endif %}{% if page.page_class %} {{ page.page_class }}{% endif %}" itemscope itemtype="http://schema.org/WebPage">
 
 {% include chrome-frame.html %}
 
