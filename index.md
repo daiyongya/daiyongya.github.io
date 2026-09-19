@@ -33,13 +33,6 @@ layout: page
   </div>
 </div>
 
-<div class="home-section research-map">
-  <h2 class="section-heading">Research Interests</h2>
-  <div>
-    <a href="/publications/"><img src="/images/research-roadmap.svg" alt="Research roadmap: foundation models, multimodal intelligence, agentic reasoning, and embodied intelligence converging toward interactive world models" /></a>
-  </div>
-</div>
-
 <div class="home-section">
   <h2 class="section-heading">News</h2>
   <div>
