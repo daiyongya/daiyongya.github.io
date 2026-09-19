@@ -38,7 +38,10 @@ layout: page
       <table class="news-table">
         <thead><tr><th>Date</th><th>Content</th></tr></thead>
         <tbody>
-          <tr><td><strong>2026</strong></td><td>🎉 Papers accepted to <strong>ACL 2026</strong>, <strong>ICLR 2026</strong>, <strong>ICML 2026</strong>, and <strong>ACM MM 2026</strong></td></tr>
+          <tr><td><strong>2026</strong></td><td>🎉 <em>Pelican-Unify 1.0</em> released, a unified embodied intelligence model for understanding, reasoning, imagination and action</td></tr>
+          <tr><td><strong>2026</strong></td><td>🎉 Papers accepted to <strong>ACL 2026</strong>, <strong>ICLR 2026</strong>, <strong>ICML 2026</strong>, <strong>EMNLP 2026</strong>, and <strong>ACM MM 2026</strong></td></tr>
+          <tr><td><strong>Nov 2025</strong></td><td>🎉 <em>Pelican-VL 1.0</em> released, a foundation brain model for embodied intelligence</td></tr>
+          <tr><td><strong>Sep 2025</strong></td><td>🎉 <em>Wow</em>: a world omniscient world model through embodied interaction</td></tr>
           <tr><td><strong>Feb 2025</strong></td><td>🎉 Two papers accepted to <strong>ACM MM 2025</strong></td></tr>
           <tr><td><strong>Sep 2024</strong></td><td>🎉 Two papers accepted to <strong>NeurIPS 2024</strong></td></tr>
           <tr><td><strong>Sep 2024</strong></td><td>🎉 One paper accepted to <strong>EMNLP 2024 Findings</strong></td></tr>
