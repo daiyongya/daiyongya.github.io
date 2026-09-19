@@ -52,7 +52,7 @@ async function settle(pending) {
   }
 }
 
-async function runClient(options = {}) {
+function startClient(options = {}) {
   const stats = "stats" in options ? options.stats : { visits: 0, countries: 0 };
   const view = { visits: element(), countries: element() };
   const pending = [];
@@ -99,6 +99,11 @@ async function runClient(options = {}) {
   sandbox.self = sandbox;
 
   vm.runInContext(readFileSync(CLIENT, "utf8"), vm.createContext(sandbox), { filename: "site-reach.js" });
+  return { view, pending };
+}
+
+async function runClient(options = {}) {
+  const { view, pending } = startClient(options);
   await settle(pending);
   return view;
 }
@@ -150,6 +155,13 @@ test("reads statistics once the session has already recorded a visit", async () 
   const view = await runClient({ stats: { visits: 90, countries: 12 } });
   assert.deepEqual(fetchCalls.map(call => call.method), ["POST", "GET"]);
   assert.equal(view.countries.textContent, "12");
+});
+
+test("records only once when a second page loads before the visit resolves", async () => {
+  const first = startClient();
+  const second = startClient();
+  await settle(first.pending.concat(second.pending));
+  assert.equal(postCalls.length, 1);
 });
 
 test("retries the visit in the same session after a failed response", async () => {

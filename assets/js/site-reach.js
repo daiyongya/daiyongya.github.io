@@ -29,6 +29,14 @@
     }
   }
 
+  function forget() {
+    try {
+      window.sessionStorage.removeItem(SESSION_KEY);
+    } catch (error) {
+      /* Nothing to undo when storage is blocked. */
+    }
+  }
+
   function write(element, value) {
     if (!element || typeof value !== "number" || !isFinite(value) || value < 0 || Math.floor(value) !== value) {
       return;
@@ -57,9 +65,12 @@
   var pending;
 
   if (!recorded() && !local) {
-    pending = request("/visit", "POST").then(function (stats) {
-      remember();
-      render(stats);
+    /* Claim the session up front so navigating mid-flight cannot post a second visit,
+       then release the claim on failure so the next page retries. */
+    remember();
+    pending = request("/visit", "POST").then(render, function (error) {
+      forget();
+      throw error;
     });
   } else if (visits || countries) {
     pending = request("/stats", "GET").then(render);
