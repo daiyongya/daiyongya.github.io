@@ -24,6 +24,9 @@ owner:
 # --------------------------------------------------
 google_verify: "SkiyuGpJOKT74vv5GmXLvYXXDkXy4v8VWPtbelYz3Hs"
 
+# Public aggregate-only reach endpoint; empty disables the client entirely.
+reach_api_url: ""
+
 
 # --------------------------------------------------
 #  TOP NAVIGATION BAR

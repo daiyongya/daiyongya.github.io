@@ -14,3 +14,8 @@
 
 <!-- https://analytics.google.com/analytics/ -->
 <!-- Lastly modified by Hanlin CAI in 2023/01/15 -->
+
+{% if site.reach_api_url != blank %}
+<script>window.SITE_REACH_API = {{ site.reach_api_url | jsonify }};</script>
+<script src="/assets/js/site-reach.js" defer></script>
+{% endif %}
