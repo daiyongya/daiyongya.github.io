@@ -25,7 +25,7 @@ owner:
 google_verify: "SkiyuGpJOKT74vv5GmXLvYXXDkXy4v8VWPtbelYz3Hs"
 
 # Public aggregate-only reach endpoint; empty disables the client entirely.
-reach_api_url: ""
+reach_api_url: "https://yong-dai-site-reach.daiyongya.workers.dev"
 
 
 # --------------------------------------------------
