@@ -27,7 +27,7 @@ layout: page
 <div class="home-section research-map">
   <h2 class="section-heading">Research Interests</h2>
   <div>
-    <a href="/publications/"><img src="/images/interest.png" alt="Research Interests" /></a>
+    <a href="/publications/"><img src="/images/research-roadmap.svg" alt="Research roadmap: foundation models, multimodal intelligence, agentic reasoning, and embodied intelligence converging toward interactive world models" /></a>
   </div>
 </div>
 
@@ -38,6 +38,7 @@ layout: page
       <table class="news-table">
         <thead><tr><th>Date</th><th>Content</th></tr></thead>
         <tbody>
+          <tr><td><strong>2026</strong></td><td>🎉 Papers accepted to <strong>ACL 2026</strong>, <strong>ICLR 2026</strong>, <strong>ICML 2026</strong>, and <strong>ACM MM 2026</strong></td></tr>
           <tr><td><strong>Feb 2025</strong></td><td>🎉 Two papers accepted to <strong>ACM MM 2025</strong></td></tr>
           <tr><td><strong>Sep 2024</strong></td><td>🎉 Two papers accepted to <strong>NeurIPS 2024</strong></td></tr>
           <tr><td><strong>Sep 2024</strong></td><td>🎉 One paper accepted to <strong>EMNLP 2024 Findings</strong></td></tr>
@@ -47,10 +48,7 @@ layout: page
           <tr><td><strong>Oct 2022</strong></td><td>🎉 <em>Prompt-based Constrained Clustering</em> accepted to <strong>Findings of EMNLP 2022</strong></td></tr>
           <tr><td><strong>Mar 2022</strong></td><td>🎉 <em>Whole Word Masking</em> accepted to <strong>Findings of ACL 2022</strong></td></tr>
           <tr><td><strong>Mar 2022</strong></td><td>🎉 <em>Chinese GPT for Pinyin Input</em> accepted to <strong>ACL 2022</strong></td></tr>
-          <tr><td><strong>Jan 2022</strong></td><td>🎉 <em>Graph Fusion Network</em> accepted to <strong>KBS</strong></td></tr>
-          <tr><td><strong>Sep 2021</strong></td><td>🎉 <em>Unsupervised Sentiment Analysis</em> accepted to <strong>CC</strong></td></tr>
           <tr><td><strong>Oct 2020</strong></td><td>🎉 <em>Contextualize KBs with Transformer</em> accepted to <strong>EMNLP 2021 (Oral)</strong></td></tr>
-          <tr><td><strong>Apr 2020</strong></td><td>🎉 <em>Adversarial Training for Sentiment Analysis</em> accepted to <strong>AAAI 2020</strong></td></tr>
         </tbody>
       </table>
     </div>

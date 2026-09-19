@@ -1,3 +1,112 @@
+/* Design tokens referenced throughout this file. Values match the Morandi
+   palette baked into images/research-roadmap.svg. */
+:root {
+  --ink: #33362f;
+  --muted: #7b817e;
+  --accent: #788c80;
+  --mist-blue: #7e909c;
+  --clay: #a08e82;
+  --dusty-mauve: #978a96;
+  --line: #d5d4ce;
+  --paper: #f7f6f2;
+  --sans: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --serif: "Source Serif 4", Georgia, serif;
+  --mono: "IBM Plex Mono", Monaco, monospace;
+}
+
+body {
+  color: var(--ink);
+  font-family: var(--serif);
+}
+
+#main {
+  box-sizing: border-box;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.navigation-wrapper {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 32px 24px 28px;
+}
+
+.site-name,
+.top-navigation {
+  position: static;
+  float: none !important;
+  width: auto !important;
+  margin: 0 !important;
+}
+
+.top-navigation ul {
+  display: flex;
+  gap: 22px;
+}
+
+.footer-wrap {
+  padding-top: 40px;
+  padding-bottom: 48px;
+}
+
+.footer-wrap footer {
+  float: none !important;
+  width: auto !important;
+  max-width: 1080px;
+  margin: 0 auto !important;
+  padding-left: 24px;
+  padding-right: 24px;
+  font-family: var(--sans);
+  font-size: 12px;
+}
+
+.footer-wrap footer p {
+  margin: 0 0 6px;
+}
+
+.news-table {
+  font-family: var(--sans);
+  font-size: 13px;
+  border-top: 1px solid var(--line);
+}
+
+.news-table th {
+  padding: 10px 16px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--line);
+}
+
+.news-table td {
+  padding: 14px 16px;
+  color: var(--ink);
+  border-bottom: 1px solid var(--line);
+}
+
+.news-table td:first-child {
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 12px;
+}
+
+.news-table tr:hover td {
+  background: var(--paper);
+}
+
+.news-table td:nth-child(2) strong {
+  color: var(--accent);
+}
+
 /* Keep the editorial grid ahead of the legacy theme's trailing media rules. */
 @media only screen and (min-width: 37.5em) {
   .site-name,
@@ -60,12 +169,14 @@
 .page-home #main {
   display: block;
   max-width: 940px;
+  margin: 0 auto;
   padding-top: 64px;
 }
 
 .page-publications #main {
   display: block;
   max-width: 940px;
+  margin: 0 auto;
   padding-top: 64px;
 }
 
@@ -205,9 +316,12 @@
 }
 
 .page-home .research-map img {
+  display: block;
+  width: 100%;
+  max-width: 700px;
   aspect-ratio: 800 / 630;
   object-fit: contain;
-  border-color: var(--line);
+  border: 1px solid var(--line);
 }
 
 .page-home .research-map a:hover img {
