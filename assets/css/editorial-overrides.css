@@ -28,6 +28,8 @@ body {
 }
 
 .navigation-wrapper {
+  /* main.css sets width:100%, so the horizontal padding must stay inside it. */
+  box-sizing: border-box;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
@@ -197,6 +199,97 @@ body {
   padding-bottom: 62px;
 }
 
+/* main.css indents and pulls up adjacent paragraphs with `p+p`, which fights the
+   intro hierarchy, so every homepage paragraph sets its own spacing. */
+.page-home .profile-intro p {
+  text-indent: 0;
+}
+
+.page-home .profile-summary {
+  margin: 26px 0 0;
+  max-width: 680px;
+  font-size: 19px;
+  line-height: 1.62;
+}
+
+.page-home .profile-focus {
+  margin: 20px 0 0;
+  max-width: 680px;
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: 14px;
+  line-height: 1.68;
+}
+
+.page-home .profile-focus strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.research-thesis {
+  max-width: 680px;
+  margin: 38px 0 0;
+  padding: 24px 26px 26px;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--accent);
+  background: var(--paper);
+}
+
+.page-home .research-thesis .thesis-kicker {
+  margin: 0;
+  color: var(--accent);
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.thesis-flow {
+  display: grid;
+  grid-template-columns: max-content minmax(18px, 1fr) max-content minmax(18px, 1fr) max-content;
+  align-items: center;
+  gap: 14px;
+  margin: 18px 0 0;
+}
+
+.thesis-flow span {
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.thesis-flow span:nth-of-type(1) {
+  color: var(--accent);
+}
+
+.thesis-flow span:nth-of-type(2) {
+  color: var(--mist-blue);
+}
+
+.thesis-flow span:nth-of-type(3) {
+  color: var(--clay);
+}
+
+.thesis-flow i {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: var(--line);
+}
+
+.page-home .research-thesis > p:last-child {
+  margin: 20px 0 0;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  color: var(--ink);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
 .profile-intro h1,
 .publications-intro h1 {
   position: relative;
@@ -315,17 +408,157 @@ body {
   }
 }
 
+/* `ol li` in main.css forces upper-roman markers, so the rows reset their own list style. */
+.page-home .experience-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.page-home .experience-list li {
+  display: grid;
+  grid-template-columns: 112px minmax(0, 1fr);
+  gap: 22px;
+  padding: 13px 0;
+  list-style: none;
+}
+
+.page-home .experience-list li + li {
+  border-top: 1px solid var(--line);
+}
+
+.page-home .experience-list li:first-child {
+  padding-top: 0;
+}
+
+.page-home .experience-list li:last-child {
+  padding-bottom: 0;
+}
+
+.page-home .experience-list time {
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.5;
+}
+
+.page-home .experience-list strong {
+  display: block;
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.page-home .experience-list span {
+  display: block;
+  margin-top: 3px;
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.page-home .research-map a {
+  display: inline-block;
+  max-width: 100%;
+  border-bottom: 0;
+}
+
 .page-home .research-map img {
+  box-sizing: border-box;
   display: block;
   width: 100%;
   max-width: 700px;
   aspect-ratio: 800 / 630;
   object-fit: contain;
   border: 1px solid var(--line);
+  transition: border-color 0.2s ease;
 }
 
-.page-home .research-map a:hover img {
+.page-home .research-map a:hover img,
+.page-home .research-map a:focus-visible img {
   border-color: var(--accent);
+}
+
+.page-home a {
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.page-home a:focus-visible,
+.page-home .research-map a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.page-home .news-table td {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.page-home .news-table th:first-child,
+.page-home .news-table td:first-child {
+  padding-left: 0;
+}
+
+.page-home .news-table th:last-child,
+.page-home .news-table td:last-child {
+  padding-right: 0;
+}
+
+.page-home .site-reach {
+  display: grid;
+  grid-template-columns: 108px minmax(0, 1fr);
+  gap: 28px;
+  margin-top: 0;
+  padding: 48px 0 0;
+  border-top: 1px solid var(--line);
+}
+
+.page-home .site-reach > p {
+  margin: 0;
+  color: var(--accent);
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.page-home .site-reach dl {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 420px;
+  margin: 0;
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+
+.page-home .site-reach dl > div {
+  padding: 13px 16px 14px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.page-home .site-reach dt {
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.page-home .site-reach dd {
+  margin: 4px 0 0;
+  color: var(--ink);
+  font-family: var(--mono);
+  font-size: 18px;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.3;
 }
 
 .publications-intro {
@@ -513,6 +746,40 @@ body {
     padding-bottom: 48px;
   }
 
+  .page-home .profile-summary {
+    font-size: 17px;
+  }
+
+  .research-thesis {
+    padding: 20px 20px 22px;
+  }
+
+  .thesis-flow {
+    grid-template-columns: 1fr;
+    justify-items: start;
+    gap: 8px;
+  }
+
+  .thesis-flow i {
+    width: 1px;
+    height: 18px;
+    margin-left: 1px;
+  }
+
+  .page-home .experience-list li {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+
+  .page-home .site-reach {
+    display: block;
+    padding: 36px 0 0;
+  }
+
+  .page-home .site-reach > p {
+    margin-bottom: 16px;
+  }
+
   .profile-links {
     margin-top: 26px;
   }
@@ -555,5 +822,13 @@ body {
 
   .publication-item {
     padding-left: 38px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-home a,
+  .research-map img,
+  .page-home .research-map img {
+    transition: none;
   }
 }
