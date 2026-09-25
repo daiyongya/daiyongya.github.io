@@ -23,13 +23,28 @@ layout: page
 
 <div class="home-section">
   <h2 class="section-heading">Experience</h2>
-  <div>
+  <div class="experience-row">
     <ol class="experience-list">
       <li><time>06/21 – 04/24</time><div><strong>Tencent AI Lab</strong><span>Research Intern and Researcher</span></div></li>
       <li><time>12/20 – 04/21</time><div><strong>Westlake University</strong><span>Visiting Student</span></div></li>
       <li><time>10/19 – 10/20</time><div><strong>Microsoft STCA NLPG</strong><span>Research Intern</span></div></li>
       <li><time>10/18 – 08/19</time><div><strong>Nuance collaboration</strong><span>Project Leader</span></div></li>
     </ol>
+    <form class="contact-box" action="https://formsubmit.co/61c79f2e42385dd98e805ddf6ef7bac1" method="POST" data-contact>
+      <p class="contact-kicker" id="contact-title">Message</p>
+      <p class="contact-lead">Leave a note here.</p>
+      <label for="contact-name">Name</label>
+      <input id="contact-name" name="name" type="text" autocomplete="name" required maxlength="120">
+      <label for="contact-message">Note</label>
+      <textarea id="contact-message" name="message" required maxlength="4000" rows="3"></textarea>
+      <input type="hidden" name="email" value="daiyongya@outlook.com">
+      <input class="contact-honey" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_subject" value="Message from caihanlin.com">
+      <button type="submit">Send</button>
+      <p class="contact-status" role="status" aria-live="polite"></p>
+    </form>
   </div>
 </div>
 
