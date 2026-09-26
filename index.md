@@ -6,30 +6,16 @@ layout: page
   <h1>Yong Dai</h1>
   <p class="profile-summary">AI researcher whose work has consistently centered on model pre-training and post-training, spanning language models, multimodal foundation models, agents, and embodied intelligence. I conducted research at Microsoft and Tencent AI Lab, where I worked on the training and adaptation of foundation models.</p>
   <p class="profile-focus">Current focus: <strong>embodied intelligence</strong> and <strong>world models</strong> — building the foundation brain models and interactive world models that let AI move from the digital world into the physical one.</p>
-  <aside class="research-thesis" aria-labelledby="research-thesis-title">
-    <p class="thesis-kicker" id="research-thesis-title">Research thesis</p>
-    <div class="thesis-flow" aria-label="Experience leads through accumulation and compression to intelligence">
-      <span>Experience</span><i aria-hidden="true"></i>
-      <span>Accumulation &amp; compression</span><i aria-hidden="true"></i>
-      <span>Intelligence</span>
-    </div>
-    <p>Scaling intelligence means scaling how much experience a model can compress. The gap between digital and physical intelligence lies in the limited accumulation and compression of action information and real-world interaction.</p>
-  </aside>
-  <div class="profile-links">
-    <a href="mailto:daiyongya@outlook.com">Email</a>
-    <a href="https://scholar.google.com/citations?hl=zh-CN&user=mCCOT7wAAAAJ" target="_blank">Google Scholar</a>
-  </div>
-</div>
-
-<div class="home-section">
-  <h2 class="section-heading">Experience</h2>
-  <div class="experience-row">
-    <ol class="experience-list">
-      <li><time>06/21 – 04/24</time><div><strong>Tencent AI Lab</strong><span>Research Intern and Researcher</span></div></li>
-      <li><time>12/20 – 04/21</time><div><strong>Westlake University</strong><span>Visiting Student</span></div></li>
-      <li><time>10/19 – 10/20</time><div><strong>Microsoft STCA NLPG</strong><span>Research Intern</span></div></li>
-      <li><time>10/18 – 08/19</time><div><strong>Nuance collaboration</strong><span>Project Leader</span></div></li>
-    </ol>
+  <div class="intro-panels">
+    <aside class="research-thesis" aria-labelledby="research-thesis-title">
+      <p class="thesis-kicker" id="research-thesis-title">Research thesis</p>
+      <div class="thesis-flow" aria-label="Experience leads through accumulation and compression to intelligence">
+        <span>Experience</span><i aria-hidden="true"></i>
+        <span>Accumulation &amp; compression</span><i aria-hidden="true"></i>
+        <span>Intelligence</span>
+      </div>
+      <p>Scaling intelligence means scaling how much experience a model can compress. The gap between digital and physical intelligence lies in the limited accumulation and compression of action information and real-world interaction.</p>
+    </aside>
     <form class="contact-box" action="https://formsubmit.co/61c79f2e42385dd98e805ddf6ef7bac1" method="POST" data-contact>
       <p class="contact-kicker" id="contact-title">Message</p>
       <p class="contact-lead">Leave a note here.</p>
@@ -45,6 +31,22 @@ layout: page
       <button type="submit">Send</button>
       <p class="contact-status" role="status" aria-live="polite"></p>
     </form>
+  </div>
+  <div class="profile-links">
+    <a href="mailto:daiyongya@outlook.com">Email</a>
+    <a href="https://scholar.google.com/citations?hl=zh-CN&user=mCCOT7wAAAAJ" target="_blank">Google Scholar</a>
+  </div>
+</div>
+
+<div class="home-section">
+  <h2 class="section-heading">Experience</h2>
+  <div>
+    <ol class="experience-list">
+      <li><time>06/21 – 04/24</time><div><strong>Tencent AI Lab</strong><span>Research Intern and Researcher</span></div></li>
+      <li><time>12/20 – 04/21</time><div><strong>Westlake University</strong><span>Visiting Student</span></div></li>
+      <li><time>10/19 – 10/20</time><div><strong>Microsoft STCA NLPG</strong><span>Research Intern</span></div></li>
+      <li><time>10/18 – 08/19</time><div><strong>Nuance collaboration</strong><span>Project Leader</span></div></li>
+    </ol>
   </div>
 </div>
 

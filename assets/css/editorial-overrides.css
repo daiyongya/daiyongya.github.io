@@ -194,7 +194,7 @@ body {
 }
 
 .page-home .profile-intro {
-  max-width: 760px;
+  max-width: none;
   padding-bottom: 62px;
 }
 
@@ -225,9 +225,17 @@ body {
   font-weight: 600;
 }
 
+.page-home .intro-panels {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 248px;
+  gap: 16px;
+  align-items: stretch;
+  margin-top: 38px;
+}
+
 .research-thesis {
-  max-width: 680px;
-  margin: 38px 0 0;
+  max-width: none;
+  margin: 0;
   padding: 24px 26px 26px;
   border: 1px solid var(--line);
   border-left: 3px solid var(--accent);
@@ -328,17 +336,12 @@ body {
   text-decoration: none;
 }
 
-.page-home .experience-row {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 220px;
-  gap: 28px;
-  align-items: start;
-}
-
 .page-home .contact-box {
   position: relative;
+  display: flex;
+  flex-direction: column;
   margin: 0;
-  padding: 12px 12px 10px;
+  padding: 24px 16px 16px;
   border: 1px solid var(--line);
   border-left: 3px solid var(--accent);
   background: var(--paper);
@@ -391,7 +394,8 @@ body {
 }
 
 .page-home .contact-box textarea {
-  min-height: 68px;
+  flex: 1 1 auto;
+  min-height: 88px;
   resize: vertical;
 }
 
@@ -413,8 +417,9 @@ body {
 }
 
 .page-home .contact-box button {
+  align-self: flex-start;
   width: auto;
-  margin-top: 10px;
+  margin-top: 14px;
   padding: 6px 12px;
   border: 1px solid var(--ink);
   background: transparent;
@@ -917,13 +922,12 @@ body {
     margin-left: 1px;
   }
 
-  .page-home .experience-row {
+  .page-home .intro-panels {
     display: block;
   }
 
   .page-home .contact-box {
-    max-width: 280px;
-    margin-top: 22px;
+    margin-top: 14px;
   }
 
   .page-home .experience-list li {
